@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../Styles/main.css">
+        <link rel="stylesheet" href="../Styles/language.css">
+        <link rel="stylesheet" href="../Styles/environment.css">
+        <script type="text/javascript" src="../Scripts/environment.js"></script>
+
+        </script>
+
+        <title>Govan Environment</title>
+    </head>
+    <body>
+        <nav><!--Nav bar, may change how it is structured, may make it a more rubust dropdown with just the translate widget remaining outside the dropdown-->
+            <div id="google_translate_element"></div>
+            <div id="buttons">
+              <div><a href="home">Home</a></div>
+                <div><a href="history">History</a></div>
+                <div><a href="environment">Environment</a></div>
+                <div><a href="accommodation">Accommodation</a></div>
+                <div><a href="services">Services</a></div>
+                <div><a href="resources">Resources</a></div>
+                <div><a href="contact">Contact Us</a></div>
+            </div>
+        </nav>
+
+        <script type="text/javascript" src="../Scripts/language.js"></script> <!--Script for intialising the Google Translate system alongside the WIP cookie solution for default languages-->
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <!--Uses the third party api to create the translate widget-->
+
+        <div class="weatherWidget" id="weatherApplication"></div>
+		      <script>
+			       window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+			          window.weatherWidgetConfig.push({
+				              selector:".weatherWidget",
+				              apiKey:"CTLV7XMBHP9BEFW5JQZBDUCU9",
+				              location:"Govan, Scotland",
+				              unitGroup:"metric",
+				              forecastDays:5,
+				              title:"Govan, Scotland",
+				              showTitle:true,
+				              showConditions:true
+		                  });
+
+		         (function() {
+		             var d = document, s = d.createElement('script');
+		             s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+		             s.setAttribute('data-timestamp', +new Date());
+		             (d.head || d.body).appendChild(s);
+		             })();
+	               </script>
+
+        <div class="sections">
+          <button id="climate" onclick="showDiv(this.id)">Climate</button>
+          <button id="waste" onclick="showDiv(this.id)">Waste</button>
+          <button id="transport" onclick="showDiv(this.id)">Transport</button>
+          <button id="sanitation" onclick="showDiv(this.id)">Sanitation</button>
+        </div>
+        <div>
+          <div class="section" id="climate2">
+            <h2>Climate</h2>
+            <p></p>
+          </div>
+          <div class="section" id="waste2">
+            <h2>Waste<h2>
+              <p></p>
+            </div>
+            <div class="section" id="transport2">
+              <h2>Transport</h2>
+              <p></p>
+            </div>
+            <div class="section" id="sanitation2">
+              <h2>Sanitation</h2>
+              <p></p>
+            </div>
+        </div>
+    </body>
+</html>

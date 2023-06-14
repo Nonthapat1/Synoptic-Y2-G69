@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../Styles/main.css">
+        <link rel="stylesheet" href="../Styles/language.css">
+        <link rel="stylesheet" href="../Styles/contact.css">
+
+
+        <title>Welcome to Govan</title>
+    </head>
+    <body>
+        <nav><!--Nav bar, may change how it is structured, may make it a more rubust dropdown with just the translate widget remaining outside the dropdown-->
+            <div id="google_translate_element"></div>
+            <div id="buttons">
+                <div><a href="home">Home</a></div>
+                <div><a href="history">History</a></div>
+                <div><a href="environment">Environment</a></div>
+                <div><a href="accommodation">Accommodation</a></div>
+                <div><a href="services">Services</a></div>
+                <div><a href="resources">Resources</a></div>
+                <div><a href="contact">Contact Us</a></div>
+            </div>
+        </nav>
+
+        <script type="text/javascript" src="../Scripts/language.js"></script> <!--Script for intialising the Google Translate system alongside the WIP cookie solution for default languages-->
+
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <!--Uses the third party api to create the translate widget-->
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form id="contactForm" name="contactForm" class="form" action="/contact" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="10" required></textarea>
+
+                <input type="submit" id="submit" value="submit">
+            </form>
+            <script src="../Scripts/contact.js"></script>
+
+    </body>
+</html>

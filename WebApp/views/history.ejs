@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../Styles/main.css">
+        <link rel="stylesheet" href="../Styles/language.css">
+        <link rel="stylesheet" href="../Styles/history.css">
+        <script type="text/javascript" src="../Scripts/history.js"></script>
+        <title>History of Govan</title>
+    </head>
+    <body>
+        <nav><!--Nav bar, may change how it is structured, may make it a more rubust dropdown with just the translate widget remaining outside the dropdown-->
+            <div id="google_translate_element"></div>
+            <div id="buttons">
+              <div><a href="home">Home</a></div>
+                <div><a href="history">History</a></div>
+                <div><a href="environment">Environment</a></div>
+                <div><a href="accommodation">Accommodation</a></div>
+                <div><a href="services">Services</a></div>
+                <div><a href="resources">Resources</a></div>
+                <div><a href="contact">Contact Us</a></div>
+            </div>
+        </nav>
+
+        <script type="text/javascript" src="../Scripts/language.js"></script> <!--Script for intialising the Google Translate system alongside the WIP cookie solution for default languages-->
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <!--Uses the third party api to create the translate widget-->
+
+        <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <button id="1" onclick="showP(this.id)"><h2>4000-5000 Years Ago</h2></button>
+              <p class="1">Evidence of monolithic stones, log canoes and tools indicate
+                early settlement along the River Clyde.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="2" onclick="showP(this.id)"><h2>2750-3000 Years Ago</h2></button>
+              <p class="2">Evidence of metal-working communities living in the
+                Govan area.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="3" onclick="showP(this.id)"><h2>1880-2000 Years Ago</h2></button>
+              <p class="3">Romans arrive in Britain and reach as far as Glasgow. The
+                Antonine Wall is built between the Firth of Forth and the Firth
+                 of Clyde.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="4" onclick="showP(this.id)"><h2>500s</h2></button>
+              <p class="4">The Christian missionary St Constantine arrives in
+                Govan and builds a small wooden church in the
+                shadow of a ceremonial hill. Govan means ‘little hill’.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="5" onclick="showP(this.id)"><h2>650s</h2></button>
+              <p class="5">The church and ceremonial hill in Govan are part of the Kingdom
+                 of Clyde, ruled from Dumbarton Rock.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="6" onclick="showP(this.id)"><h2>756</h2></button>
+              <p class="6">Picts and Northumbrians attack Clyde Britons at Dumbarton.
+                Invaders reach as far as Govan.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="7" onclick="showP(this.id)"><h2>850s</h2></button>
+              <p class="7">The Govan Sarcophagus, a high status burial monument, is
+                carved from a single block of stone.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="8" onclick="showP(this.id)"><h2>870s</h2></button>
+              <p class="8">Vikings attack Dumbarton (near Glasgow). The Kingdom of Clyde
+                survives and moves up river to Govan and is renamed to the
+                Kingdom of Strathclyde. A royal stronghold is established around
+                 the church of St. Constantine.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="9" onclick="showP(this.id)"><h2>900-1100</h2></button>
+              <p class="9">The Kingdom of Strathclyde is at its height. Govan is the
+                centre for stone carvings. Norse influence ‘hogback’ burial
+                monuments that now reside in the Govan Old Church.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="10" onclick="showP(this.id)"><h2>1050</h2></button>
+              <p class="10">The Kingdom of Strathclyde is conquered and absorbed into the
+                Kingdom of Scotland. King David I of Scotland grants Govan
+                church and its lands to Glasgow Cathedral.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="11" onclick="showP(this.id)"><h2>1100-1600</h2></button>
+              <p class="11">Govan grows around Govan Cross and Water Row. Medieval
+                Govanites meet around the ceremonial hill by the church to pass
+                law and justice (‘dooms’). The hill is called Doomster Hill.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="12" onclick="showP(this.id)"><h2>1400-1500</h2></button>
+              <p class="12">Houses, barns and mills surrounding Govan Old Church are
+                destroyed by the flooding. The Govan Fair begins and is the
+                responsibility of the Govan Weavers.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="13" onclick="showP(this.id)"><h2>1600s</h2></button>
+              <p class="13">Weaving, pottery and agriculture are established. Govan is a
+                small agricultural and fishing village with a linking ferry to
+                Partick. Extensive coal mine works developed around the
+                neighbouring Craigton and Drumoyne.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="14" onclick="showP(this.id)"><h2>1707</h2></button>
+              <p class="14">The Acts of Union is passed by the English and
+                Scottish Parliaments leading to the creation of the
+                United Kingdom of Great Britain and a UK Parliament.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="15" onclick="showP(this.id)"><h2>1717</h2></button>
+              <p class="15">The first slave trade voyage is recorded from Scotland.
+                A further 19 voyages are recorded from Glasgow
+                satellite ports. Exact quantification is unknown due to
+                ships commonly sailing to West Africa via other ports
+                without recording the purpose.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="16" onclick="showP(this.id)"><h2>1757</h2></button>
+              <p class="16">The Govan Weavers revive the annual Govan Fair
+                which is celebrated on the first Friday of June every
+                year.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="17" onclick="showP(this.id)"><h2>1759</h2></button>
+              <p class="17">The Clyde Navigation Act was passed due to
+                increased trade with the Americas. The deepening of
+                the River Clyde begins, enabling more ships to enter
+                and the construction of quays and shipping docks.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="18" onclick="showP(this.id)"><h2>1788-1792</h2></button>
+              <p class="18">Mass public campaigns against the slave trade in
+                Scotland. UK Parliament abolishes the slave trade in
+                1807 and complete abolition of slavery in 1833.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="19" onclick="showP(this.id)"><h2>1840</h2></button>
+              <p class="19">Doomster Hill is removed and Reid’s Dyeworks
+                was erected on the site. Robert Napier began iron
+                shipbuilding in Govan. The Vanguard, the first ship, is
+                produced two years later.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="20" onclick="showP(this.id)"><h2>1860s</h2></button>
+              <p class="20">Govan is granted burgh status in 1864 under the
+                General Police (Scotland) Act 1862 and becomes the
+                fifth largest burgh in Scotland. Govan railway station
+                opens in 1868.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="21" onclick="showP(this.id)"><h2>1875-1898</h2></button>
+              <p class="21">The first Govan Graving Docks open with the third and
+                final dock opening in 1898. The three docks service
+                hundreds of ships that navigate the Clyde.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="22" onclick="showP(this.id)"><h2>1881</h2></button>
+              <p class="22">The Govan Fair ends with traditional weaving trade on
+                the decline and the increase of Govan’s engineering
+                and shipbuilding industries.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="23" onclick="showP(this.id)"><h2>1884-1888</h2></button>
+              <p class="23">The current Govan Old Church is built.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="24" onclick="showP(this.id)"><h2>1896</h2></button>
+              <p class="24">The Glasgow Subway, an underground light metro
+                system, opens to passengers. It is the world’s third
+                oldest underground railway and celebrated 125 years
+                in 2021.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="25" onclick="showP(this.id)"><h2>1900s</h2></button>
+              <p class="25">New industries and factories are developed.
+                Population increases from 9,000 in 1864 to 95,000 by
+                1907.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="26" onclick="showP(this.id)"><h2>1901</h2></button>
+              <p class="26">Govan is the seventh largest town in Scotland. Burgh
+                boundaries increase to include Linthouse and West
+                Drumoyne.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="27" onclick="showP(this.id)"><h2>1912</h2></button>
+              <p class="27">Glasgow absorbs Govan after a series of annexation
+                battles.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="28" onclick="showP(this.id)"><h2>1915</h2></button>
+              <p class="28">Govan is the setting for the women rent strikers led by
+              <a href="https://remembermarybarbour.wordpress.com/about-mary-barbour/">
+              Mary Barbour</a>. The law is changed to reduce rents to
+              pre-World War I levels across the UK.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="29" onclick="showP(this.id)"><h2>1920</h2></button>
+              <p class="29">The Old Govan Fair is revived by the Old Govan Club
+                and organised by the Govan Fair Association. All
+                proceeds are donated to charity.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="30" onclick="showP(this.id)"><h2>1921</h2></button>
+              <p class="30">Govan railway station permanently closes.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="31" onclick="showP(this.id)"><h2>1930s</h2></button>
+              <p class="31">Housing estates are constructed to relieve the
+                overcrowded district of the Gorbals.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="32" onclick="showP(this.id)"><h2>1939-1945</h2></button>
+              <p class="32">Govan properties are damaged during World War II
+                with many shops and tenements reduced to rubble,
+                leaving derelict ground.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="33" onclick="showP(this.id)"><h2>1945-1967</h2></button>
+              <p class="33">Millions are displaced globally after World War II. The
+                1951 Refugee Convention is signed by 147 countries.
+                The 1967 Protocol extends the remit to the rest of the
+                world.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="34" onclick="showP(this.id)"><h2>1960s</h2></button>
+              <p class="34">Fairfield goes bankrupt. Shipbuilding industry declines
+                after World War II and from competition abroad.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="35" onclick="showP(this.id)"><h2>1970s</h2></button>
+              <p class="35">Jimmy Reid leads the Upper Clyde Shipbuilders in
+                staging a ‘work in’ at Fairfield, saving the yard from
+                closure.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="36" onclick="showP(this.id)"><h2>1986</h2></button>
+              <p class="36">The Govan Initiative is established to boost the
+                economy and attract new housing.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="37" onclick="showP(this.id)"><h2>1988</h2></button>
+              <p class="37">The Govan Graving Docks close.</p>
+              <p class="37">The <a href="https://www.glasgowgardenfestival.org/">
+              Glasgow Garden Festival</a> transformed the
+              Plantation Quay in Govan from a declining dockyard
+              into a green space, theme park and adventure
+              playground.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="38" onclick="showP(this.id)"><h2>1990s</h2></button>
+              <p class="38">An archaeological excavation is conducted at the
+                original site of Doomster Hill. Scottish comedy series
+                ‘Rab C. Nesbit’ is based in Govan.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="39" onclick="showP(this.id)"><h2>1997-1999</h2></button>
+              <p class="39">A referendum is held in Scotland with 74.3% backing
+                reconvening a Scottish Parliament which is reestablished 1999 with devolved legislative powers
+                (e.g. Health, Education and Justice) from the UK
+                Parliament.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="40" onclick="showP(this.id)"><h2>2001</h2></button>
+              <p class="40">Glasgow becomes an asylum dispersal city, with
+                Govan becoming the ‘initial accommodation area’ for
+                all new arrivals. <a href="https://www.unhcr.org/uk/world-refugee-day">
+                World Refugee Day</a> is designated by the United Nations,
+                falling on June 20 each year. It celebrates the strength and
+                courage of people who have been forced to flee their home
+                country to escape conflict or persecution.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="41" onclick="showP(this.id)"><h2>2010</h2></button>
+              <p class="41">800 mourners attend the funeral of Jimmy Reid at Govan Old
+              Church.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="42" onclick="showP(this.id)"><h2>2014</h2></button>
+              <p class="42">Scotland holds a referendum for independence
+                with 45% voting yes and 55% voting no. The
+                Commonwealth Games are hosted in Glasgow. Rugby
+                Sevens are played in Ibrox Stadium.</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="43" onclick="showP(this.id)"><h2>2016</h2></button>
+              <p class="43">The UK holds a referendum to withdraw from the European Union
+              with 52% voting leave and 48% voting remain.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="44" onclick="showP(this.id)"><h2>2020</h2></button>
+              <p class="44"><a href="https://www.glasgowworld.com/news/people/kenmure-street-11-photos-of-glasgow-deportation-raid-protest-one-year-on-3691100">
+              Protesters and neighbours</a> on Kenmure Street spontaneously
+              block a UK Home Office immigration van until the detainees are
+              released. Govan Mutual Aid group is established at the start of
+              the COVID-19 pandemic. The UK withdraws from the European Union.
+              </p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <button id="45" onclick="showP(this.id)"><h2>2021</h2></button>
+              <p class="45">The 2021 United Nations Climate Change Conference
+              (COP26) is hosted in Glasgow (across the river from
+              Govan in Finnieston).</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <button id="46" onclick="showP(this.id)"><h2>2022</h2></button>
+              <p class="46">The <a href="https://www.govanhillbaths.com/celebratingkenmurestreet/">
+                Festival of Resistance</a> marks the anniversary of the Kenmure
+                Street action. Archaeologists start work to recover remains of
+                the 1988 Glasgow Garden Festival.</p>
+            </div>
+          </div>
+      </div>
+    </body>
+</html>

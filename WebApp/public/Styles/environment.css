@@ -1,0 +1,25 @@
+.visualcrossing-wx-widget{
+  background: var(--tri);
+}
+
+.section{
+  display: none;
+}
+.sections{
+  width: 100%;
+}
+
+.sections button{
+  width: 25%;
+  float: left;
+  overflow: hidden;
+  border: hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.sections button:hover{
+  background: var(--tri);
+}

@@ -1,0 +1,10 @@
+/*This CSS file is dedicated to removing the toolbar that appears at the top of a browser when the translate widget is used*/
+.goog-te-gadget img{
+    display:none !important;
+}
+body > .skiptranslate {
+    display: none;
+}
+body {
+    top: 0px !important;
+}
