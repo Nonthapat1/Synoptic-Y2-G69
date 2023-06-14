@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../Styles/main.css">
-        <link rel="stylesheet" href="../Styles/language.css">
-
-        <title>Welcome to Govan</title>
-    </head>
+<head>
+    <link rel="stylesheet" href="../Styles/main.css">
+    <link rel="stylesheet" href="../Styles/language.css">
+    <script type="text/javascript" src="../Scripts/sections.js"></script>
+    <title>Welcome to Govan</title>
+</head>
     <body>
         <nav><!--Nav bar, may change how it is structured, may make it a more rubust dropdown with just the translate widget remaining outside the dropdown-->
             <div id="google_translate_element"></div>
@@ -14,7 +14,6 @@
                 <div><a href="history">History</a></div>
                 <div><a href="environment">Environment</a></div>
                 <div><a href="accommodation">Accommodation</a></div>
-                <div><a href="services">Services</a></div>
                 <div><a href="resources">Resources</a></div>
                 <div><a href="contact">Contact Us</a></div>
             </div>
@@ -26,9 +25,30 @@
         <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <!--Uses the third party api to create the translate widget-->
 
         <p>
-            You can translate the content of this
-            page by selecting a language in the
-            select box.
+          <div class="sections">
+            <button id="energy" onclick="showDiv(this.id)">Energy</button>
+            <button id="food" onclick="showDiv(this.id)">Food</button>
+            <button id="industry" onclick="showDiv(this.id)">Industry</button>
+            <button id="digital" onclick="showDiv(this.id)">Digital</button>
+          </div>
+          <div>
+            <div class="section" id="energy2">
+              <h2>Energy</h2>
+              <p></p>
+            </div>
+            <div class="section" id="food2">
+              <h2>Food</h2>
+                <p></p>
+              </div>
+              <div class="section" id="industry2">
+                <h2>Industry</h2>
+                <p></p>
+              </div>
+              <div class="section" id="digital2">
+                <h2>Digital</h2>
+                <p></p>
+              </div>
+          </div>
         </p>
     </body>
 </html>
