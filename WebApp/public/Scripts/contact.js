@@ -1,4 +1,3 @@
-// test
 
 let contactForm = document.querySelector(".form");
 let userName  = document.getElementById("name");
@@ -40,25 +39,3 @@ contactForm.addEventListener("submit", (e) => {
         });
     });
 
-
-//document.getElementById('contactForm').addEventListener('submit', function(event) {
-//    event.preventDefault();
-
-//    var formData = new FormData(this);
-
- //   fetch('/contact', {
-//        method: 'POST',
-//        body: formData
-//    })
-//    .then(function(response) {
-//        if (response.ok) {
-//            alert('Email sent successfully!');
-//            document.getElementById('contactForm').reset();
- //       } else {
- //           alert('Failed to send email.');
- //       }
- //   })
- //   .catch(function(error) {
- //       console.error('Error:', error);
- //   });
-//});
