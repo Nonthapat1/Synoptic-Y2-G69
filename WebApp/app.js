@@ -2,16 +2,17 @@ const express = require("express");
 
 const app = express();
 
-const nodemailer = require("nodemailer");
+const nodemailer = require("nodemailer"); // Importing Nodemailer for sending email to users
 
 const port = 3000;
 
-app.set("view engine", "ejs");
+app.set("view engine", "ejs"); //Configuring the view engine to use EJS templates
 
-app.use(express.static("public"));
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(express.static("public")); // Serving static files from the "public" directory
+app.use(express.urlencoded({ extended: true })); // Parsing URL-encoded data in the request body
+app.use(express.json()); // Parsing JSON data in the request body
 
+// routes for pages
 app.get("/", (request, response) => {
 	response.redirect("home");
 });
@@ -28,6 +29,7 @@ app.get("/contact", (request, response) => {
 	response.render("contact");
 });
 
+//function to send email to users
 app.post('/contact', function(req, res) {
     const name = req.body.name;
     const email = req.body.email;
@@ -51,10 +53,10 @@ app.post('/contact', function(req, res) {
     transporter.sendMail(mailOptions, function(error, info) {
         if (error) {
             console.error('Error:', error);
-            res.sendStatus(500);
+            res.sendStatus(500); // Sending a status that an error occurred
         } else {
             console.log('Email sent:', info.response);
-            res.sendStatus(200);
+            res.sendStatus(200); // Sending a status that success
         }
     });
 });
@@ -78,5 +80,5 @@ app.get("/services", (request, response) => {
 
 
 app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
+  console.log(`Server listening on port ${port}`);// Starting the server
 });
