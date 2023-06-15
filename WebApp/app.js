@@ -38,16 +38,16 @@ app.post('/contact', function(req, res) {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'health.tracker12345@gmail.com',
-            pass: 'whqovcfviseafiqx'
+            user: 'test.only622544@gmail.com',
+            pass: 'muigwegmtiwvpbgu'
         }
     });
 
     let mailOptions = {
-        from: 'health.tracker12345@gmail.com',
+        from: 'test.only622544@gmail.com',
         to: email,
-        subject: 'Thank you for contact us',
-        text: `Hello ${name},Description :${message}`
+        subject: 'Thank you for contacting us',
+        text: `Hello ${name},\n\nDescription :${message} \n\nWe will get in touch with you as soon as possible.\n\nThank You!\nAdmin`
     };
 
     transporter.sendMail(mailOptions, function(error, info) {
