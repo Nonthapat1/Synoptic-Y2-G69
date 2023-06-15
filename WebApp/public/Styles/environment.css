@@ -1,7 +1,3 @@
-.visualcrossing-wx-widget{
-  background: var(--tri);
-}
-
 .section{
   display: none;
 }
@@ -22,4 +18,23 @@
 
 .sections button:hover{
   background: var(--tri);
+}
+
+#transport2 img{
+    width: 200px;
+    height:auto;
+}
+
+#waste2 {
+}
+
+#waste2 p {
+	float: left;
+}
+
+#waste2 img{
+    float: right;
+	display:inline;
+	width:200px;
+	height:auto;
 }
